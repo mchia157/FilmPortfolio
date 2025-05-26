@@ -1,7 +1,7 @@
-/* .App {
+.App {
   text-align: center;
 }
-
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -92,4 +92,57 @@ a.navbar-brand {
   text-decoration: none;
   color: black;
 }
+
+/*Banner CSS*/
+.my-picture {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  margin-top: 0;
+}
+
+.banner {
+  margin-top: 0;
+  padding: 120px;
+}
+
+.banner h1 {
+  font-size: 100px;
+}
+
+.banner p {
+  text-align: justify;
+}
+
+.banner .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner button {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  letter-spacing: 0.8px;
+  padding: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner button svg{
+  font-size: 28px;
+  margin-left: 20px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner button:hover svg {
+  margin-top: 10px;
+}
+
 
