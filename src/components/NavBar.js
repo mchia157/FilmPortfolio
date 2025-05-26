@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {Navbar, Container, Nav} from "react-bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -13,15 +14,15 @@ export const NavBar = () => {
     }
     return (
         <Navbar expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">
+            <Container className="custom-navbar-container">
+                <Navbar.Brand href="#home" className="me-auto">
                     <p>WELCOME TO MY PORTFOLIO</p>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggle" onClick={onToggleNavBar}>
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="ms-auto">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>About</Nav.Link>
                         <Nav.Link href="#work" className={activeLink === 'work' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('work')}>Work Experience</Nav.Link>
                         <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Personal Projects</Nav.Link>
