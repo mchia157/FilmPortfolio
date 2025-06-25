@@ -113,8 +113,15 @@ a.navbar-brand {
 
 .banner h1 {
   font-size: 100px;
-  -webkit-text-stroke-color:  rgb(24, 12, 0);
-  -webkit-text-stroke-width: 3px;
+  text-align: center;
+  /* -webkit-text-stroke-color:  rgb(24, 12, 0);
+  -webkit-text-stroke-width: 3px; */
+}
+
+@media only screen and (max-width: 430px) {
+  .banner h1 {
+    font-size: 60px;
+  }
 }
 
 .banner p {
@@ -167,8 +174,8 @@ a.navbar-brand {
   text-align: center;
   margin-bottom: 30px;
   color: white;
-  -webkit-text-stroke-color: rgb(24, 12, 0);
-  -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-stroke-color: rgb(24, 12, 0);
+  -webkit-text-stroke-width: 1.5px; */
 }
 
 .proj-imgbx {
@@ -238,6 +245,6 @@ a.navbar-brand {
   text-align: center;
   margin-bottom: 30px;
   color: white;
-  -webkit-text-stroke-color: rgb(24, 12, 0);
-  -webkit-text-stroke-width: 1.5px;
+  /* -webkit-text-stroke-color: rgb(24, 12, 0);
+  -webkit-text-stroke-width: 1.5px; */
 }
